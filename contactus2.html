@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products -- Redstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+     <div class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" width="125px">
+      </div>
+      <nav>
+          <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Product</a></li>
+              <li><a href="Aboutus.html">About</a></li>
+              <li><a href="contactus.html">Contact</a></li>
+              <li><a href="account.html">Account</a></li>
+          </ul>
+      </nav>
+       <a href="account.html"><img src="images/cart.png" width="30px" height="30px"></a>
+       <a><img src="images/menu.png" class="menu-icon" onclick="menutoggle()"></a>
+      </div>  
+    </div>
+    <!-------------------------------------------------------> 
+    <div class="background2">
+        <div class="container2">
+          <div class="screen">
+            <div class="screen-header">
+              <div class="screen-header-left">
+                <div class="screen-header-button close"></div>
+                <div class="screen-header-button maximize"></div>
+                <div class="screen-header-button minimize"></div>
+              </div>
+              <div class="screen-header-right">
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+              </div>
+            </div>
+            <div class="screen-body">
+              <div class="screen-body-item left">
+                <div class="app-title">
+                  <span>CONTACT</span>
+                  <span>US</span>
+                </div>
+                <div class="app-contact">CONTACT INFO : +91 8692923427</div>
+              </div>
+              <div class="screen-body-item">
+                <div class="app-form">
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="NAME" value="NAME">
+                  </div>
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="EMAIL">
+                  </div>
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="CONTACT NO">
+                  </div>
+                  <div class="app-form-group message">
+                    <input class="app-form-control" placeholder="MESSAGE">
+                  </div>
+                  <div class="app-form-group buttons">
+                    <button class="app-form-button">CANCEL</button>
+                    <button class="app-form-button">SEND</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="credits">
+            inspired by
+            <a class="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank">
+              <svg class="dribbble" viewBox="0 0 200 200">
+                <g stroke="#ffffff" fill="none">
+                  <circle cx="100" cy="100" r="90" stroke-width="20"></circle>
+                  <path d="M62.737004,13.7923523 C105.08055,51.0454853 135.018754,126.906957 141.768278,182.963345" stroke-width="20"></path>
+                  <path d="M10.3787186,87.7261455 C41.7092324,90.9577894 125.850356,86.5317271 163.474536,38.7920951" stroke-width="20"></path>
+                  <path d="M41.3611549,163.928627 C62.9207607,117.659048 137.020642,86.7137169 189.041451,107.858103" stroke-width="20"></path>
+                </g>
+              </svg>
+              Gururaj
+            </a>
+          </div>
+        </div>
+      </div>
+      
+<!--------Footer------>
+       <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <p>Download App for Android and Ios Mobile Phone.</p>
+              <div class="app-logo">
+                <img src="images/play-store.png">
+                <img src="images/app-store.png">
+              </div>
+            </div>
+            <div class="footer-col-2">
+              <img src="images/logo-white.png">
+              <p>Our Purpose Is To Sustainably Make the Pleasure and Benefitsof Sports Accessible to the Many.</p>
+            </div>
+            <div class="footer-col-3">
+              <h3>Usefull Links</h3>
+              <ul>
+                <li>Cupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+              </ul>
+            </div>
+            <div class="footer-col-4">
+              <h3>Usefull Links</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>YouTube</li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+          <p class="copyright">Copyright 2022 - Umar Memon</p>
+        </div>
+       </div>
+
+       <!-- js for toogle menu-->
+       <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+          if(MenuItems.style.maxHeight == "0px")
+          {
+            MenuItems.style.maxHeight = "200px";
+          }
+          else{
+            MenuItems.style.maxHeight = "0px";
+          }
+        }
+       </script>
+</body>
+</html>
